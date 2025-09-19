@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 // Ajusta estos valores internos si lo necesitas
 const VIDEO_SRC = "/videos/promo-video.mp4";
 const VIDEO_POSTER = "/images/promo-video-poster.jpg";
-const WRAPPER_CLASSNAME = "w-full max-w-4xl mx-auto"; // puedes editar esta cadena
+const WRAPPER_CLASSNAME = "w-[90vw] max-w-4xl mx-auto py-[10vh]";
 
 export default function VideoFrame() {
   const videoRef = useRef(null);

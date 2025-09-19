@@ -1,7 +1,20 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
+
   const images = [
     {
       src: '/entheo_textlogo_black.png',
@@ -55,46 +68,106 @@ const Hero = () => {
 
   const scales = [scale4, scale5, scale6, scale5, scale6, scale8, scale9];
 
-  // Position styles for each image
-  const getPositionStyles = (index) => {
+  // Position styles for desktop layout
+  const getDesktopPositionStyles = (index) => {
     const positions = {
       1: {
         top: '-30vh',
         left: '-1vw',
-        height: '30vh',
-        width: '35vw'
+        height: '25vh',
+        width: '30vw'
       },
+      //IZQUIERDA ARRIBA
       2: {
-        top: '1vh',
+        top: '-15vh',
         left: '-30vw',
-        height: '45vh',
-        width: '20vw'
+        height: '25vh',
+        width: '30vw'
       },
+      //DERECHA ARRIBA
       3: {
+        top: '-15vh',
         left: '30vw',
         height: '25vh',
-        width: '25vw'
+        width: '30vw'
       },
+      //ABAJO AL CENTRO
       4: {
-        top: '27.5vh',
+        top: '30vh',
         left: '-1vw',
         height: '25vh',
-        width: '20vw'
+        width: '30vw'
       },
+      //IZQUIERDA ABAJO
       5: {
-        top: '20vh',
+        top: '15vh',
         left: '-26.5vw',
         height: '25vh',
         width: '30vw'
       },
+      //DERECHA ABAJO
       6: {
-        top: '20vh',
+        top: '15vh',
         left: '25vw',
-        height: '15vh',
-        width: '15vw'
+        height: '25vh',
+        width: '30vw'
       }
     };
     return positions[index] || {};
+  };
+
+  // Position styles for mobile layout
+  const getMobilePositionStyles = (index) => {
+    const positions = {
+      //ARRIBA AL CENTRO
+      1: {
+        top: '-30vh',
+        left: '-1vw',
+        height: '20vh',
+        width: '25vw'
+      },
+      //IZQUIERDA ARRIBA
+      2: {
+        top: '-15vh',
+        left: '-30vw',
+        height: '20vh',
+        width: '25vw'
+      },
+      //DERECHA ARRIBA
+      3: {
+        top: '-15vh',
+        left: '30vw',
+        height: '20vh',
+        width: '25vw'
+      },
+      //ABAJO AL CENTRO
+      4: {
+        top: '30vh',
+        left: '-1vw',
+        height: '20vh',
+        width: '25vw'
+      },
+      //IZQUIERDA ABAJO
+      5: {
+        top: '15vh',
+        left: '-26.5vw',
+        height: '20vh',
+        width: '25vw'
+      },
+      //DERECHA ABAJO
+      6: {
+        top: '15vh',
+        left: '25vw',
+        height: '20vh',
+        width: '25vw'
+      }
+    };
+    return positions[index] || {};
+  };
+
+  // Get position styles based on device type
+  const getPositionStyles = (index) => {
+    return isMobile ? getMobilePositionStyles(index) : getDesktopPositionStyles(index);
   };
 
   return (

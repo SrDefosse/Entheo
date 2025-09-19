@@ -9,17 +9,21 @@ import Footer from './components/layout/Footer'
 import VideoFrame from './components/home/VideoFrame'
 import Gallery from './components/home/Gallery'
 import ScrollCarousel from './components/home/ScrollCarousel'
+import Navbar from './components/layout/Navbar'
+import ScrollReveal from './components/home/ScrollReveal'
 
 function App() {
   useSmoothScroll();
 
   return (
+
     <div>
+      <Navbar/>
       <div>
         <Hero/>
       </div>
       <div>
-        <NiceSlider/>
+        <ScrollReveal/>
       </div>
       <div>
         <ScrollCarousel/>

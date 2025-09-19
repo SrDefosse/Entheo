@@ -6,6 +6,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+import GlassButton from "../ui/GlassButton";
 
 const ROTATION_RANGE = 35;
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
@@ -54,10 +55,19 @@ const TiltShineCard = ({ src, title, className = "" }) => {
           style={{ opacity: sheenOpacity }}
           className="absolute inset-0 bg-gradient-to-br from-white/50 via-white to-white/50"
         />
-        {/* Título de la imagen */}
+        {/* Overlay con título y botón */}
         {title && (
-          <div className="absolute bottom-0 w-full text-white text-sm font-medium py-1 text-center">
-            {title}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent sm:opacity-0 sm:hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end items-start p-4 sm:p-6">
+            <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3 transform sm:translate-x-4 sm:hover:translate-x-0 transition-transform duration-300">
+              {title}
+            </h3>
+            <GlassButton 
+              variant="primary" 
+              size="sm"
+              className="transform sm:translate-x-4 sm:hover:translate-x-0 transition-transform duration-300 delay-100"
+            >
+              Shop Now
+            </GlassButton>
           </div>
         )}
       </motion.div>

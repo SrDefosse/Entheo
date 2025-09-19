@@ -32,7 +32,7 @@ const Gallery = () => {
     <section className="bg-white text-gray-800 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-left mb-12">
-          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Nuestros Productos</h2>
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Proximas Colecciones</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl">
             Descubre nuestra colección exclusiva. Diseños únicos que cuentan una historia y realzan tu estilo personal.
           </p>
@@ -45,10 +45,7 @@ const Gallery = () => {
               <div className="absolute bottom-0 left-0 p-6 text-white w-full">
                 <h3 className="text-xl font-bold">{product.name}</h3>
                 <p className="mt-2 text-sm opacity-80">{product.description}</p>
-                <a href={product.link} className="mt-4 inline-flex items-center text-sm font-semibold hover:underline">
-                  Ver más
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </a>
+                
               </div>
             </div>
           ))}

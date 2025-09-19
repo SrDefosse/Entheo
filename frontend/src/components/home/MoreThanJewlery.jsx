@@ -12,7 +12,7 @@ const containerVariants = {
 
 function MoreThanJewlery() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-8 bg-white">
+    <section className="h-[70vh] flex items-center justify-center px-8 pb-[10vh] bg-white">
       <motion.div
         className="max-w-4xl w-full"
         initial="hidden"
