@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollRevealBase = ({
+const ScrollRevealEffect = ({
   children,
   scrollContainerRef,
   enableBlur = true,
@@ -66,7 +66,7 @@ const ScrollRevealBase = ({
           scroller,
           start: 'top bottom-=20%',
           end: wordAnimationEnd,
-          scrub: true
+          scrub: 3,
         }
       }
     );
@@ -84,7 +84,7 @@ const ScrollRevealBase = ({
             scroller,
             start: 'top bottom-=20%',
             end: wordAnimationEnd,
-            scrub: true
+            scrub: 3,
           }
         }
       );
@@ -96,26 +96,24 @@ const ScrollRevealBase = ({
   }, [scrollContainerRef, enableBlur, baseRotation, baseOpacity, rotationEnd, wordAnimationEnd, blurStrength]);
 
   return (
-    <h2 ref={containerRef} className={`my-5 mx-24 px- text-justify ${containerClassName}`}>
+    <h2 ref={containerRef} className={`my-5 ${containerClassName}`}>
       <p className={`text-[clamp(1.6rem,4vw,3rem)] leading-[1.5] font-semibold ${textClassName}`}>{splitText}</p>
     </h2>
   );
 };
 
-// Componente predefinido con el texto y configuraciones específicas
 const ScrollReveal = () => {
   return (
-    <ScrollRevealBase
+    <ScrollRevealEffect
       baseOpacity={0}
       enableBlur={true}
       baseRotation={5}
       blurStrength={10}
+      containerClassName="w-1/2 mx-auto"
     >
-      Recuerda que cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad.
-    </ScrollRevealBase>
+      Recuerda que cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad
+    </ScrollRevealEffect>
   );
-};
+}
 
-// Exportar ambos componentes
 export default ScrollReveal;
-export { ScrollRevealBase };

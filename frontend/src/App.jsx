@@ -2,7 +2,6 @@
 import useSmoothScroll from './hooks/useSmoothScroll';
 import './App.css'
 import Hero from './components/home/Hero'
-import NiceSlider from './components/home/NiceSlider'
 import LookBook from './components/home/LookBook'
 import MoreThanJewlery from './components/home/MoreThanJewlery'
 import Footer from './components/layout/Footer'
@@ -23,7 +22,14 @@ function App() {
         <Hero/>
       </div>
       <div>
-        <ScrollReveal/>
+<ScrollReveal
+  baseOpacity={0}
+  enableBlur={true}
+  baseRotation={5}
+  blurStrength={10}
+>
+  Recuerda que cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad.
+</ScrollReveal>
       </div>
       <div>
         <ScrollCarousel/>
