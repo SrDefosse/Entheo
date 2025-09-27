@@ -33,7 +33,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200 rounded-lg shadow-lg"
+      className="group relative h-[300px] w-[300px] overflow-hidden rounded-lg bg-neutral-200 shadow-lg sm:h-[450px] sm:w-[450px]"
     >
       <img
         src={card.url}

@@ -47,13 +47,10 @@ const FlyoutNav = () => {
   );
 };
 
-const Logo = ({ color = "black" }) => {
-  // Temp logo from https://logoipsum.com/
+const Logo = () => {
   return (
     <div className="flex items-center gap-2">
-      <span className="text-2xl font-bold" style={{ color }}>
-        ENTHEO
-      </span>
+      <img src="/entheo_logo_black.png" alt="ENTHEO" className="h-16 w-auto" />
     </div>
   );
 };
@@ -359,7 +356,7 @@ const MobileMenu = () => {
             className="fixed left-0 top-0 flex h-screen w-full flex-col bg-white"
           >
             <div className="flex items-center justify-between p-6">
-              <Logo color="black" />
+              <Logo />
               <button onClick={() => setOpen(false)}>
                 <FiX className="text-3xl text-neutral-950" />
               </button>

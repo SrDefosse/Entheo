@@ -106,7 +106,7 @@ function LookBook() {
         </h2>
 
         {/* Grid 2x2 superior */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
           {topGrid.map((img, i) => (
             <TiltShineCard
               key={i}
@@ -118,7 +118,7 @@ function LookBook() {
         </div>
 
         {/* Grid 1x3 medio */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
           {middleGrid.map((img, i) => (
             <TiltShineCard
               key={i}
@@ -130,7 +130,7 @@ function LookBook() {
         </div>
 
         {/* Grid 2x2 inferior */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
           {bottomGrid.map((img, i) => (
             <TiltShineCard
               key={i}

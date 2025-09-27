@@ -19,37 +19,30 @@ const Hero = () => {
     {
       src: '/entheo_textlogo_black.png',
       alt: 'Modern architecture building',
-      link: 'https://blinksites.mx',
     },
     {
       src: '/products/product (15).png',
       alt: 'Urban cityscape at sunset',
-      link: 'https://blinksites.mx',
     },
     {
       src: '/products/product (20).png',
       alt: 'Abstract geometric pattern',
-      link: 'https://blinksites.mx',
     },
     {
       src: '/products/product (4).png',
       alt: 'Mountain landscape',
-      link: 'https://blinksites.mx',
     },
     {
       src: '/products/product (5).png',
       alt: 'Minimalist design elements',
-      link: 'https://blinksites.mx',
     },
     {
       src: '/products/product (11).png',
       alt: 'Ocean waves and beach',
-      link: 'https://blinksites.mx',
     },
     {
       src: '/products/product (7).png',
       alt: 'Forest trees and sunlight',
-      link: 'https://blinksites.mx',
     },
   ];
 
@@ -181,7 +174,7 @@ const Hero = () => {
           height: '100vh', 
           overflow: 'hidden' 
         }}>
-          {images.map(({ src, alt, link }, index) => {
+          {images.map(({ src, alt }, index) => {
             const scale = scales[index % scales.length];
             const customPosition = getPositionStyles(index);
             
@@ -209,7 +202,7 @@ const Hero = () => {
                   left: customPosition.left || 'auto',
                   pointerEvents: 'auto',
                 }}>
-                  <a href={link} target="_blank" rel="noopener noreferrer" style={{ display: 'block', height: '100%', width: '100%' }}>
+                  <a style={{ display: 'block', height: '100%', width: '100%' }}>
                     <img
                       src={src}
                       alt={alt || `Parallax image ${index + 1}`}

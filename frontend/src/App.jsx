@@ -12,11 +12,11 @@ import Navbar from './components/layout/Navbar'
 import ScrollReveal from './components/home/ScrollReveal'
 
 function App() {
-  useSmoothScroll();
+  
 
   return (
 
-    <div>
+    <div className='scroll-smooth'>
       <Navbar/>
       <div>
         <Hero/>
