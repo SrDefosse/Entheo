@@ -37,7 +37,7 @@ const Hero = () => {
       alt: 'Minimalist design elements',
     },
     {
-      src: '/products/product (11).png',
+      src: '/products/product (10).png',
       alt: 'Ocean waves and beach',
     },
     {
