@@ -18,6 +18,7 @@ function App() {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easeOutExpo
       smoothWheel: true,
+      wheelMultiplier: 1,
     });
 
     function raf(time) {
@@ -41,14 +42,14 @@ function App() {
         <Hero/>
       </div>
       <div>
-<ScrollReveal
-  baseOpacity={0}
-  enableBlur={true}
-  baseRotation={5}
-  blurStrength={10}
->
-  Recuerda que cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad.
-</ScrollReveal>
+        <ScrollReveal
+          baseOpacity={0}
+          enableBlur={true}
+          baseRotation={5}
+          blurStrength={10}
+        >
+          Recuerda que cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad.
+        </ScrollReveal>
       </div>
       <div>
         <ScrollCarousel/>

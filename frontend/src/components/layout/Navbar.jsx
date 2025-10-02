@@ -396,9 +396,4 @@ const LINKS = [
     href: "#",
     component: AboutUsContent,
   },
-  {
-    text: "Apoyo Social",
-    href: "#",
-    component: CareersContent,
-  }
 ];

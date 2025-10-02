@@ -21,27 +21,27 @@ const Hero = () => {
       alt: 'Modern architecture building',
     },
     {
-      src: '/products/product (15).png',
+      src: '/hero/hero-1.png',
       alt: 'Urban cityscape at sunset',
     },
     {
-      src: '/products/product (20).png',
+      src: '/hero/hero-2.png',
       alt: 'Abstract geometric pattern',
     },
     {
-      src: '/products/product (4).png',
+      src: '/hero/hero-3.png',
       alt: 'Mountain landscape',
     },
     {
-      src: '/products/product (5).png',
+      src: '/hero/hero-4.png',
       alt: 'Minimalist design elements',
     },
     {
-      src: '/products/product (10).png',
+      src: '/hero/hero-5.png',
       alt: 'Ocean waves and beach',
     },
     {
-      src: '/products/product (7).png',
+      src: '/hero/hero-6.png',
       alt: 'Forest trees and sunlight',
     },
   ];
