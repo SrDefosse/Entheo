@@ -3,32 +3,32 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const products = [
   {
-    name: 'Sustancias',
+    name: 'Sustancias - Las Llaves Prohibidas',
     description: 'Las plantas sagradas despiertan la puerta a lo desconocido',
-    image: '/products/product (4).png',
+    image: '/upcoming/product (4).png',
     link: '#',
-    story: 'Aquí va una historia cautivadora sobre la Colección 1, describiendo la inspiración, los materiales y el viaje creativo detrás de cada pieza. La idea es que el cliente se sienta conectado con el producto a un nivel más profundo.',
+    story: 'Ayahuasca. Hongos. DMT. Peyote. Bufo.\n\nLa primera colección es el inicio del sacrilegio: ingerir lo sagrado y permitir que lo humano se rompa.\n\nCada pieza es un talismán de esas llaves que destrozan la mente para abrir universos.\n\nNo es joyería. Es un recordatorio de que un solo respiro puede borrarlo todo.',
   },
   {
-    name: 'Unwrap Mind',
+    name: 'Unwrap Your Mind - El Desgarro',
     description: 'La mente se abre y lo surreal envuelve cada pensamiento',
-    image: '/products/product (19).png',
+    image: '/upcoming/product (19).png',
     link: '#',
-    story: 'La Colección 2 se inspira en la belleza de la naturaleza. Cada joya refleja la luz de una manera única, al igual que los rayos del sol a través de las hojas de un bosque. Descubre la magia que se esconde en cada detalle.',
+    story: 'Las puertas se quiebran.\n\nDe pronto, lo real ya no es real. Lo familiar se derrumba y lo imposible se vuelve inevitable.\n\nLas piezas nacen de ese desgarro: fracturas, luces líquidas, símbolos que sangran belleza.\n\nNo abres tu mente: la desgarras hasta que grita.',
   },
   {
-    name: 'Immersion',
+    name: 'Peak - Disolución del Ego',
     description: 'El ego se disuelve, el laberinto interno se recorre y el cosmos se revela',
-    image: '/products/product (21).png',
+    image: '/upcoming/product (21).png',
     link: '#',
-    story: 'Urbana y moderna, la Colección 3 está diseñada para la mujer contemporánea. Líneas limpias y formas geométricas se unen para crear piezas audaces que no pasarán desapercibidas. Perfecta para destacar en cualquier ocasión.',
+    story: 'Aquí mueres.\n\nEl "yo" se hace polvo. No hay identidad, no hay nombre, no hay cuerpo.\n\nLas joyas de esta colección son cenizas de ego fundidas con destellos de infinito.\n\nMorir para entender que nunca exististe.',
   },
   {
-    name: 'Colección 4',
-    description: 'Descripción breve de la colección 4.',
-    image: '/products/product (25).png',
+    name: 'Peak - Laberinto',
+    description: 'En la espiral del extravío, cada giro es una herida que te acerca al centro',
+    image: '/upcoming/product (25).png',
     link: '#',
-    story: 'Un viaje a través del tiempo. La Colección 4 reinterpreta diseños clásicos con un toque moderno. Joyas atemporales que cuentan historias de elegancia y sofisticación, destinadas a pasar de generación en generación.',
+    story: 'El viaje no es recto. Es espiral.\n\nSombras, espejos, pasajes imposibles. Cada mente crea su propio infierno y su propio paraíso.\n\nEsta colección encarna la geometría del extravío. Piezas que giran, se cruzan, se pierden.\n\nEl centro existe, pero tendrás que sangrar para llegar.',
   },
 ];
 
@@ -52,7 +52,7 @@ const Gallery = () => {
         <div className="text-left mb-12">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Proximas Colecciones</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl">
-            Descubre nuestra colección exclusiva. Diseños únicos que cuentan una historia y realzan tu estilo personal.
+          No son colecciones. <br/>Son capítulos de un rito. <br/> Una odisea que cada año abre otra puerta, hasta deshacerte y rehacerte. 
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

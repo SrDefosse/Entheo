@@ -38,7 +38,7 @@ const Card = ({ card }) => {
       <img
         src={card.url}
         alt={card.title}
-        className="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        className="bg-white absolute inset-0 z-0 p-8 w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
       />
       <div className="absolute bottom-6 left-6 z-10">
         <GlassButton variant="secondary" size="md">
@@ -53,63 +53,78 @@ export default ScrollCarousel;
 
 const cards = [
   {
-    url: "/products/product (1).png",
+    url: "/products/producto1.png",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "/products/product (2).png",
+    url: "/products/producto2.png",
     title: "Title 2",
     id: 2,
   },
   {
-    url: "/products/product (3).png",
+    url: "/products/producto3.png",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "/products/product (4).png",
+    url: "/products/producto4.png",
     title: "Title 4",
     id: 4,
   },
   {
-    url: "/products/product (5).png",
+    url: "/products/producto5.png",
     title: "Title 5",
     id: 5,
   },
   {
-    url: "/products/product (6).png",
+    url: "/products/producto6.png",
     title: "Title 6",
     id: 6,
   },
   {
-    url: "/products/product (7).png",
+    url: "/products/producto7.png",
     title: "Title 7",
     id: 7,
   },
   {
-    url: "/products/product (8).png",
+    url: "/products/producto8.png",
     title: "Title 8",
     id: 8,
   },
   {
-    url: "/products/product (9).png",
+    url: "/products/producto9.png",
     title: "Title 9",
     id: 9,
   },
   {
-    url: "/products/product (10).png",
+    url: "/products/producto10.png",
     title: "Title 10",
     id: 10,
   },
   {
-    url: "/products/product (11).png",
+    url: "/products/producto11.png",
     title: "Title 11",
     id: 11,
   },
   {
-    url: "/products/product (12).png",
+    url: "/products/producto12.png",
     title: "Title 12",
     id: 12,
   },
+  {
+    url: "/products/producto13.png",
+    title: "Title 13",
+    id: 13,
+  },
+  {
+    url: "/products/producto14.png",
+    title: "Title 14",
+    id: 14,
+  },
+  {
+    url: "/products/producto15.png",
+    title: "Title 15",
+    id: 15,
+  }
 ];

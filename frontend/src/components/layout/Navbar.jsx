@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FiMenu, FiArrowRight, FiX, FiChevronDown } from "react-icons/fi";
-import { FaUserCircle } from "react-icons/fa";
 import {
   useMotionValueEvent,
   AnimatePresence,
@@ -22,7 +22,7 @@ const FlyoutNav = () => {
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setScrolled(latest > 250);
+    setScrolled(latest > 100);
   });
 
   return (
@@ -50,7 +50,9 @@ const FlyoutNav = () => {
 const Logo = () => {
   return (
     <div className="flex items-center gap-2">
-      <img src="/entheo_logo_black.png" alt="ENTHEO" className="h-16 w-auto" />
+      <Link to="/">
+        <img src="/entheo_logo_black.png" alt="ENTHEO" className="h-16 w-auto" />
+      </Link>
     </div>
   );
 };
@@ -78,7 +80,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative h-fit w-fit"
     >
-      <a href={href} className="relative">
+      <Link to={href} className="relative">
         {children}
         <span
           style={{
@@ -86,7 +88,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
           }}
           className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-neutral-800 transition-transform duration-300 ease-out"
         />
-      </a>
+      </Link>
       <AnimatePresence>
         {showFlyout && (
           <motion.div
@@ -290,15 +292,15 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
           onClick={() => setOpen((pv) => !pv)}
         >
-          <a
+          <Link
             onClick={(e) => {
               e.stopPropagation();
               setMenuOpen(false);
             }}
-            href={href}
+            to={href}
           >
             {children}
-          </a>
+          </Link>
           <motion.div
             animate={{ rotate: open ? "180deg" : "0deg" }}
             transition={{
@@ -310,17 +312,17 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }) => {
           </motion.div>
         </div>
       ) : (
-        <a
+        <Link
           onClick={(e) => {
             e.stopPropagation();
             setMenuOpen(false);
           }}
-          href="#"
+          to={href}
           className="flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold"
         >
           <span>{children}</span>
           <FiArrowRight />
-        </a>
+        </Link>
       )}
       {FoldContent && (
         <motion.div
@@ -387,13 +389,18 @@ export default Navbar;
 
 const LINKS = [
   {
-    text: "Nosotros",
-    href: "#",
-    component: PricingContent,
+    text: "Inicio",
+    href: "/",
+    component: undefined,
   },
   {
-    text: "Productos",
-    href: "#",
-    component: AboutUsContent,
+    text: "Sobre Nosotros",
+    href: "/about",
+    component: undefined,
   },
+  {
+    text: "Personaliza Tu Pieza",
+    href: "/custom-piece",
+    component: undefined,
+  }
 ];

@@ -111,7 +111,7 @@ const ScrollReveal = () => {
       blurStrength={10}
       containerClassName="w-1/2 mx-auto"
     >
-      Recuerda que cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad
+      Cada una de tus compras contribuye a una causa social para ayudar a personas en situación de vulnerabilidad
     </ScrollRevealEffect>
   );
 }
