@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import CustomPiece from './pages/CustomPiece'
+import Upcoming from './pages/Upcoming'
 import useSmoothScroll from './hooks/useSmoothScroll'
 import useScrollToTop from './hooks/useScrollToTop'
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/custom-piece" element={<CustomPiece/>} />
+        <Route path="/upcoming" element={<Upcoming/>} />
       </Routes>
       <div>
         <Footer/>

@@ -73,58 +73,53 @@ const cards = [
     id: 4,
   },
   {
-    url: "/products/producto5.png",
-    title: "Title 5",
-    id: 5,
-  },
-  {
     url: "/products/producto6.png",
     title: "Title 6",
-    id: 6,
-  },
-  {
-    url: "/products/producto7.png",
-    title: "Title 7",
-    id: 7,
+    id: 5,
   },
   {
     url: "/products/producto8.png",
     title: "Title 8",
-    id: 8,
+    id: 6,
   },
   {
     url: "/products/producto9.png",
     title: "Title 9",
-    id: 9,
+    id: 7,
   },
   {
     url: "/products/producto10.png",
     title: "Title 10",
-    id: 10,
+    id: 8,
   },
   {
     url: "/products/producto11.png",
     title: "Title 11",
-    id: 11,
+    id: 9,
   },
   {
     url: "/products/producto12.png",
     title: "Title 12",
-    id: 12,
+    id: 10,
   },
   {
     url: "/products/producto13.png",
     title: "Title 13",
-    id: 13,
+    id: 11,
   },
   {
     url: "/products/producto14.png",
     title: "Title 14",
-    id: 14,
+    id: 12,
   },
   {
     url: "/products/producto15.png",
     title: "Title 15",
-    id: 15,
-  }
+    id: 13,
+  },
+  {
+    url: "/products/producto7.png",
+    title: "Title 7",
+    id: 14,
+  },
 ];

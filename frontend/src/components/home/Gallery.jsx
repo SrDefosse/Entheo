@@ -1,33 +1,30 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const products = [
   {
     name: 'Sustancias - Las Llaves Prohibidas',
     description: 'Las plantas sagradas despiertan la puerta a lo desconocido',
     image: '/upcoming/product (4).png',
-    link: '#',
     story: 'Ayahuasca. Hongos. DMT. Peyote. Bufo.\n\nLa primera colección es el inicio del sacrilegio: ingerir lo sagrado y permitir que lo humano se rompa.\n\nCada pieza es un talismán de esas llaves que destrozan la mente para abrir universos.\n\nNo es joyería. Es un recordatorio de que un solo respiro puede borrarlo todo.',
   },
   {
     name: 'Unwrap Your Mind - El Desgarro',
     description: 'La mente se abre y lo surreal envuelve cada pensamiento',
     image: '/upcoming/product (19).png',
-    link: '#',
     story: 'Las puertas se quiebran.\n\nDe pronto, lo real ya no es real. Lo familiar se derrumba y lo imposible se vuelve inevitable.\n\nLas piezas nacen de ese desgarro: fracturas, luces líquidas, símbolos que sangran belleza.\n\nNo abres tu mente: la desgarras hasta que grita.',
   },
   {
     name: 'Peak - Disolución del Ego',
     description: 'El ego se disuelve, el laberinto interno se recorre y el cosmos se revela',
     image: '/upcoming/product (21).png',
-    link: '#',
     story: 'Aquí mueres.\n\nEl "yo" se hace polvo. No hay identidad, no hay nombre, no hay cuerpo.\n\nLas joyas de esta colección son cenizas de ego fundidas con destellos de infinito.\n\nMorir para entender que nunca exististe.',
   },
   {
     name: 'Peak - Laberinto',
     description: 'En la espiral del extravío, cada giro es una herida que te acerca al centro',
     image: '/upcoming/product (25).png',
-    link: '#',
     story: 'El viaje no es recto. Es espiral.\n\nSombras, espejos, pasajes imposibles. Cada mente crea su propio infierno y su propio paraíso.\n\nEsta colección encarna la geometría del extravío. Piezas que giran, se cruzan, se pierden.\n\nEl centro existe, pero tendrás que sangrar para llegar.',
   },
 ];
@@ -100,9 +97,15 @@ const Gallery = () => {
                  </div>
                  <div>
                    <h2 className="text-3xl font-extrabold mb-4 text-shadow-lg">{selectedProduct.name}</h2>
-                   <p className="text-base mb-4 text-shadow leading-relaxed">
+                   <p className="text-base mb-6 text-shadow leading-relaxed">
                      {selectedProduct.story}
                    </p>
+                   <Link 
+                     to="/upcoming"
+                     className="inline-block px-8 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full text-white font-semibold border border-white/30 hover:border-white/50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                   >
+                     Ver más
+                   </Link>
                  </div>
                </div>
              </motion.div>

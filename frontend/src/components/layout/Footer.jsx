@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { SiShopify } from "react-icons/si";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,11 +12,13 @@ function Footer() {
       <footer className="w-full bg-stone-900 backdrop-blur-md shadow-lg py-6 px-4 md:py-8 md:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
         {/* Logo izquierda */}
-        <img
-          src="https://cdn.shopify.com/s/files/1/0740/7291/6222/files/entheo-logotext-white.png?v=1745554064"
-          alt="Entheo Logo"
-          className="h-20"
-        />
+        <Link to="/" className="cursor-pointer">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0740/7291/6222/files/entheo-logotext-white.png?v=1745554064"
+            alt="Entheo Logo"
+            className="h-20"
+          />
+        </Link>
 
         {/* Iconos derecha */}
         <div className="flex items-center space-x-6">

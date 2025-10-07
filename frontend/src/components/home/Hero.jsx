@@ -65,7 +65,7 @@ const Hero = () => {
   const getDesktopPositionStyles = (index) => {
     const positions = {
       1: {
-        top: '-30vh',
+        top: '-25vh',
         left: '-1vw',
         height: '25vh',
         width: '30vw'
@@ -73,14 +73,14 @@ const Hero = () => {
       //IZQUIERDA ARRIBA
       2: {
         top: '-15vh',
-        left: '-30vw',
+        left: '-25vw',
         height: '25vh',
         width: '30vw'
       },
       //DERECHA ARRIBA
       3: {
         top: '-15vh',
-        left: '30vw',
+        left: '25vw',
         height: '25vh',
         width: '30vw'
       },
@@ -94,14 +94,14 @@ const Hero = () => {
       //IZQUIERDA ABAJO
       5: {
         top: '15vh',
-        left: '-26.5vw',
+        left: '-24vw',
         height: '25vh',
         width: '30vw'
       },
       //DERECHA ABAJO
       6: {
         top: '15vh',
-        left: '25vw',
+        left: '24vw',
         height: '25vh',
         width: '30vw'
       }

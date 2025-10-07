@@ -28,9 +28,9 @@ function CustomPieceCTA() {
   }
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24">
+    <section className="mx-auto max-w-5xl px-6 py-20">
       <div className="flex justify-center">
-        <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-stone-900 pb-10">
+        <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-stone-900 pb-10 drop-shadow-lg">
           Personaliza Tu Pieza
         </h2>
       </div>
@@ -109,10 +109,10 @@ function CustomPieceCTA() {
                     className="mt-2 w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 focus:outline-none focus:ring-2 focus:ring-stone-800"
                   >
                     <option value="">Selecciona un rango</option>
-                    <option value="<200">Menos de $200</option>
-                    <option value="200-500">$200 - $500</option>
-                    <option value="500-1000">$500 - $1,000</option>
-                    <option value=">1000">Más de $1,000</option>
+                    <option value="15000-25000">$15,000 - $25,000</option>
+                    <option value="25000-40000">$25,000 - $40,000</option>
+                    <option value="40000-60000">$40,000 - $60,000</option>
+                    <option value=">60000">Más de $60,000</option>
                   </select>
                 </div>
                 <div>
