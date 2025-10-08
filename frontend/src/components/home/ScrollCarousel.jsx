@@ -53,51 +53,51 @@ export default ScrollCarousel;
 
 const cards = [
   {
-    url: "/products/producto1.png",
+    url: "/products-images/producto1.png",
     id: 1,
   },
   {
-    url: "/products/producto2.png",
+    url: "/products-images/producto2.png",
     id: 2,
   },
   {
-    url: "/products/producto3.png",
+    url: "/products-images/producto3.png",
     id: 3,
   },
   {
-    url: "/products/producto4.png",
+    url: "/products-images/producto4.png",
     id: 4,
   },
   {
-    url: "/products/producto6.png",
+    url: "/products-images/producto6.png",
     id: 5,
   },
   {
-    url: "/products/producto8.png",
+    url: "/products-images/producto8.png",
     id: 6,
   },
   {
-    url: "/products/producto11.png",
+    url: "/products-images/producto11.png",
     id: 7,
   },
   {
-    url: "/products/producto12.png",
+    url: "/products-images/producto12.png",
     id: 8,
   },
   {
-    url: "/products/producto13.png",
+    url: "/products-images/producto13.png",
     id: 9,
   },
   {
-    url: "/products/producto14.png",
+    url: "/products-images/producto14.png",
     id: 10,
   },
   {
-    url: "/products/producto15.png",
+    url: "/products-images/producto15.png",
     id: 11,
   },
   {
-    url: "/products/producto7.png",
+    url: "/products-images/producto7.png",
     id: 12,
   },
 ];

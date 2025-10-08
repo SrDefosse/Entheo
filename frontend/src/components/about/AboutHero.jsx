@@ -8,7 +8,7 @@ function AboutHero() {
         The Journey of Your Mind
       </p>
       <div className="mt-10 hidden sm:block">
-        <img src="/about/about-hero.png" alt="Entheo" className="w-full rounded-2xl " />
+        <img src="/about-images/about-hero.png" alt="Entheo" className="w-full rounded-2xl " />
       </div>
     </section>
   )

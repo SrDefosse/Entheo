@@ -6,25 +6,25 @@ const products = [
   {
     name: 'Sustancias - Las Llaves Prohibidas',
     description: 'Las plantas sagradas despiertan la puerta a lo desconocido',
-    image: '/upcoming/product (4).png',
+    image: '/upcoming-images/product (4).png',
     story: 'Ayahuasca. Hongos. DMT. Peyote. Bufo.\n\nLa primera colección es el inicio del sacrilegio: ingerir lo sagrado y permitir que lo humano se rompa.\n\nCada pieza es un talismán de esas llaves que destrozan la mente para abrir universos.\n\nNo es joyería. Es un recordatorio de que un solo respiro puede borrarlo todo.',
   },
   {
     name: 'Unwrap Your Mind - El Desgarro',
     description: 'La mente se abre y lo surreal envuelve cada pensamiento',
-    image: '/upcoming/product (19).png',
+    image: '/upcoming-images/product (19).png',
     story: 'Las puertas se quiebran.\n\nDe pronto, lo real ya no es real. Lo familiar se derrumba y lo imposible se vuelve inevitable.\n\nLas piezas nacen de ese desgarro: fracturas, luces líquidas, símbolos que sangran belleza.\n\nNo abres tu mente: la desgarras hasta que grita.',
   },
   {
     name: 'Peak - Disolución del Ego',
     description: 'El ego se disuelve, el laberinto interno se recorre y el cosmos se revela',
-    image: '/upcoming/product (21).png',
+    image: '/upcoming-images/product (21).png',
     story: 'Aquí mueres.\n\nEl "yo" se hace polvo. No hay identidad, no hay nombre, no hay cuerpo.\n\nLas joyas de esta colección son cenizas de ego fundidas con destellos de infinito.\n\nMorir para entender que nunca exististe.',
   },
   {
     name: 'Peak - Laberinto',
     description: 'En la espiral del extravío, cada giro es una herida que te acerca al centro',
-    image: '/upcoming/product (25).png',
+    image: '/upcoming-images/product (25).png',
     story: 'El viaje no es recto. Es espiral.\n\nSombras, espejos, pasajes imposibles. Cada mente crea su propio infierno y su propio paraíso.\n\nEsta colección encarna la geometría del extravío. Piezas que giran, se cruzan, se pierden.\n\nEl centro existe, pero tendrás que sangrar para llegar.',
   },
 ];

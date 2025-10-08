@@ -3,7 +3,7 @@ function AboutArtist() {
     <section className="mx-auto max-w-5xl px-6 py-12">
       <div className="flex justify-center">
         <img
-          src="/about/artist.png"
+          src="/about-images/artist.png"
           alt="Emilio Marmolejo"
           className="w-full max-w-2xl h-72 md:h-96 object-cover rounded-2xl shadow-lg"
         />
