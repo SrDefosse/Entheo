@@ -113,7 +113,7 @@ const NavLink = ({ children, href, FlyoutContent }) => {
 const CTAs = () => {
   return (
     <div className="flex items-center gap-3">
-      <button className="rounded-lg border-2 border-neutral-800 bg-neutral-800 px-4 py-2 font-semibold text-white transition-colors hover:border-neutral-600 hover:bg-neutral-600 flex items-center gap-2">
+      <button className="rounded-lg border-2 border-neutral-800 bg-neutral-800 px-4 py-2 font-semibold text-white transition-colors hover:border-neutral-600 hover:bg-neutral-600 flex items-center gap-2 cursor-pointer">
         <FaShopify className="text-xl" />
         Shop Now
       </button>

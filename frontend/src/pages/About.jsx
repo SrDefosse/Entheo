@@ -6,10 +6,10 @@ import AboutArtist from '../components/about/AboutArtist'
 function About() {
   return (
     <main className="pt-28">
-      <AboutHero/>
+      <AboutHero />
 
       <AboutSection
-        image="/slider/slider1.png"
+        image="/products/producto13.png"
         imageSide="left"
         text={
           "¿Qué pasa cuando dejas de ver el mundo con los mismos ojos? ¿Y si te dijera que hay un camino para conectar con tu yo interior, un lugar donde la realidad cambia y el universo te habla? Entheo es más que una marca de joyería; es una experiencia, una invitación a romper los límites de tu mente y explorar lo desconocido."
@@ -35,7 +35,7 @@ function About() {
       />
 
       <AboutSection
-        image="/slider/slider3.png"
+        image="/products/producto15.png"
         imageSide="right"
         text={
           "Más que joyería, cada pieza de Entheo es una obra de arte, llena de simbolismo — una invitación a ir más allá de lo conocido y abrirte al misterio del universo. Porque Entheo no solo te invita a una comunidad: te invita a un viaje personal, uno que te dejará con una perspectiva completamente nueva."

@@ -7,8 +7,8 @@ function AboutHero() {
       <p className="mt-4 text-stone-600 max-w-2xl mx-auto">
         The Journey of Your Mind
       </p>
-      <div className="mt-10">
-        <img src="/slider/slider2.png" alt="Entheo" className="w-full rounded-2xl " />
+      <div className="mt-10 hidden sm:block">
+        <img src="/about/about-hero.png" alt="Entheo" className="w-full rounded-2xl " />
       </div>
     </section>
   )

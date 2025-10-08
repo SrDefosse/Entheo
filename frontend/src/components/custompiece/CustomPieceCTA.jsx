@@ -18,13 +18,28 @@ function CustomPieceCTA() {
     }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // En esta demo no enviamos datos a un backend
-    // Puedes conectar aquí un servicio o endpoint
-    // Dejamos un log para desarrollo
-    // eslint-disable-next-line no-console
-    console.log('Solicitud de Custom Piece:', form)
+    const formData = new FormData()
+    formData.append('nombre', form.nombre)
+    formData.append('email', form.email)
+    formData.append('vision', form.vision)
+    formData.append('presupuesto', form.presupuesto)
+    if (form.referencia) formData.append('referencia', form.referencia)
+
+    try {
+      const res = await fetch('/api/custom-piece', {
+        method: 'POST',
+        body: formData,
+      })
+      if (!res.ok) throw new Error('Error enviando formulario')
+      // eslint-disable-next-line no-alert
+      alert('Gracias, tu solicitud fue enviada. Te contactaremos pronto.')
+      setForm({ nombre: '', email: '', vision: '', presupuesto: '', referencia: null })
+    } catch (err) {
+      // eslint-disable-next-line no-alert
+      alert('No pudimos enviar tu solicitud. Intenta más tarde.')
+    }
   }
 
   return (
@@ -59,7 +74,7 @@ function CustomPieceCTA() {
 
           <div className="p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-stone-700">Nombre</label>
                   <input
@@ -130,7 +145,7 @@ function CustomPieceCTA() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-stone-900 px-6 py-3 text-white font-semibold shadow-sm transition hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-800"
+                  className="w-full rounded-xl bg-stone-900 px-6 py-3 text-white font-semibold shadow-sm transition hover:bg-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-800 cursor-pointer"
                 >
                   Enviar solicitud
                 </button>
